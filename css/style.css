@@ -26,17 +26,20 @@
 main {
     margin: auto;
     width: 90%;
-    padding-top: 200px;
-
+    padding-top: 150px;
+    padding-bottom: 150px;
+    
 }
 
 #flex-container-main {
+    height: calc(100vh - 300px);
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-shrink: 0;
     gap: 10px;
     overflow-y: auto;
+    
 }
 
 .box {
@@ -44,4 +47,16 @@ main {
     /* DEBUG */
     min-height: 100px;
     background-color: red;
+}
+
+/* regole barra inferiore */
+#bot-bar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    /* DEBUG */
+    background-color: chartreuse;
+
 }
