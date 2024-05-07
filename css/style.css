@@ -148,3 +148,7 @@ main {
     color: red;
     padding: 15px;
 }
+
+#share-screen {
+    color: rgba(74,195,2,255)
+}
