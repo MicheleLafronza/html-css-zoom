@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
 #container {
     width: 100vw;
     height: 100vh;
@@ -71,12 +75,15 @@ main {
 }
 
 .mic-name {
-    color: white;
     position: absolute;
     bottom: 5px;
     left: 0px;
     background-color: rgba(108, 122, 137, 0.5);
     border-radius: 10px;
+}
+
+.mic-name a {
+    color: white;
 }
 
 /* regole barra inferiore */
@@ -86,7 +93,58 @@ main {
     position: fixed;
     bottom: 0px;
     left: 0px;
-    /* DEBUG */
-    background-color: chartreuse;
+    background-color: rgba(34,34,34,255);
 
+}
+
+#flex-container-bottom {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot-bar-list {
+    height: 100%;
+}
+
+.bot-bar-list ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.icons-bot-bar {
+    padding-left: 10px;
+    display: block;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.text-cam {
+    padding-left: 5px;
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.arrow-up {
+    color: white;
+    font-size: 12px;
+}
+
+#end-meeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(74,74,74,255);
+}
+
+#end-text {
+    color: red;
+    padding: 15px;
 }
