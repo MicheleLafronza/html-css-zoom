@@ -58,18 +58,25 @@ main {
     height: calc(100vh - 300px);
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    flex-shrink: 0;
-    gap: 10px;
     overflow-y: auto;
     
 }
 
 .box {
+    position: relative;
     width: calc((100% / 7) - 20px);
-    /* DEBUG */
-    min-height: 100px;
-    background-color: red;
+    margin-bottom: 20px;
+}
+
+.mic-name {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    background-color: rgba(108, 122, 137, 0.5);
+    border-radius: 10px;
 }
 
 /* regole barra inferiore */
