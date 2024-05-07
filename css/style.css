@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+a {
+    text-decoration: none;
 }
 
 #container {
@@ -18,8 +22,27 @@
     position: fixed;
     top: 0;
     left: 0;
-    /* DEBUG */
-    background-color: blue;
+}
+
+.tag-container {
+    position: relative;
+    height: 100%;
+}
+
+.tags {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+}
+
+.single-tag {
+    padding: 5px;
+    color: white;
+    background-color: rgba(74,74,74,255);
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 /* regole contenuto centrale */
